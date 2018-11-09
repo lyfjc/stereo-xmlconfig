@@ -2,7 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--构造器注入bean-->
 
+  <!--
+  默认id soundsystem.SgtPeppers#0，因此id并不是必须的
+  -->
   <bean id="compactDisc" class="soundsystem.SgtPeppers" />
         
   <bean id="cdPlayer" class="soundsystem.CDPlayer">

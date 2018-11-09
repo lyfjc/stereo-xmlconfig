@@ -5,10 +5,17 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean id="compactDisc" class="soundsystem.BlankDisc"
-        c:_0="Sgt. Pepper's Lonely Hearts Club Band" 
+        c:_0="Sgt. Pepper's Lonely Hearts Club Band"
         c:_1="The Beatles" />
+  <!--使用索引表示参数顺序
+      如果需要引用，则c:_0-ref
+  -->
+  <!--
+  如只有一个参数，数字可以省略，即c:_
+  -->
         
   <bean id="cdPlayer" class="soundsystem.CDPlayer"
         c:_-ref="compactDisc" />
+  <!--只有一个参数时，可以省略索引数字-->
 
 </beans>

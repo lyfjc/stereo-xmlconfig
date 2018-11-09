@@ -13,7 +13,10 @@
         p:title="Sgt. Pepper's Lonely Hearts Club Band"
         p:artist="The Beatles"
         p:tracks-ref="trackList" />
+  <!--我们不能使用p-命名空间来装配集合，没有便利的
+方式使用p-命名空间来指定一个值（或bean引用）的列表-->
 
+  <!--这是一个列表bean,util还包括其他元素-->
   <util:list id="trackList">  
     <value>Sgt. Pepper's Lonely Hearts Club Band</value>
     <value>With a Little Help from My Friends</value>

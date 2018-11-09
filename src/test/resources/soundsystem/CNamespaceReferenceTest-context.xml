@@ -8,6 +8,7 @@
         
   <bean id="cdPlayer" class="soundsystem.CDPlayer"
         c:cd-ref="compactDisc" />
+  <!--c:cd-ref中的cd，为构造器的参数名-->
 
 </beans>
 

@@ -6,6 +6,7 @@
 
   <bean id="compactDisc"
         class="soundsystem.properties.BlankDisc">
+    <!--property用来设置属性-->
     <property name="title" value="Sgt. Pepper's Lonely Hearts Club Band" />
     <property name="artist" value="The Beatles" />
     <property name="tracks">
@@ -26,9 +27,11 @@
       </list>
     </property>
   </bean>
-        
+
+  <!--p命名空间，用来设置属性-->
   <bean id="cdPlayer"
         class="soundsystem.properties.CDPlayer"
         p:compactDisc-ref="compactDisc" />
+  <!-- 比对 c:cd-ref="compactDisc"，构造器参数设置-->
 
 </beans>

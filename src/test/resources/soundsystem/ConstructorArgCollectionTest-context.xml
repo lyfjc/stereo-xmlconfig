@@ -7,6 +7,9 @@
     <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band" />
     <constructor-arg value="The Beatles" />
     <constructor-arg>
+
+      <!--list或者set，前者对应java.util.List，
+      后者对应java.util.Set无序且忽略重复值-->
       <list>
         <value>Sgt. Pepper's Lonely Hearts Club Band</value>
         <value>With a Little Help from My Friends</value>
@@ -28,5 +31,4 @@
   <bean id="cdPlayer" class="soundsystem.CDPlayer">
     <constructor-arg ref="compactDisc" />
   </bean>
-
 </beans>
